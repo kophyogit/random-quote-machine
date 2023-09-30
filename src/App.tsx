@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import quotes from './assets/quotes.json'
-import {FaTwitter, FaQuoteRight, FaQuoteLeft} from "react-icons/fa"
+import {FaTwitter, FaQuoteRight, FaQuoteLeft, FaFreeCodeCamp} from "react-icons/fa"
 import './App.css'
 
 interface Quote {
@@ -31,7 +31,7 @@ function App() {
   }
 
   return (
-    <div className='background' style={{backgroundColor: randomColor, transition}}>
+    <div className={`background fade-in-down`} style={{backgroundColor: randomColor, transition}}>
     <div id='quote-box'>
     <div className='quote-content' style={{color: randomColor, transition}}>
       <FaQuoteLeft size="30" style={{marginRight: "10px"}} />
@@ -40,9 +40,9 @@ function App() {
       <h4 id='author'>{quote.author}</h4>
     </div>
     <div className='buttons'>
-      <a href='#' id='tweet-quote' style={{backgroundColor: randomColor,
-      marginRight: '10px', transition}}><FaTwitter color='white' /></a>
-      <button onClick={changeQuote} id="newquote" style={{backgroundColor: randomColor, transition}}>Change Quote</button>
+      <a href='https://www.freecodecamp.org' target='blank' id='tweet-quote' style={{backgroundColor: randomColor,
+      marginRight: '10px', transition}}><FaFreeCodeCamp color='white'/></a>
+      <button onClick={changeQuote} id="newquote" style={{backgroundColor: randomColor, transition}} >Change Quote</button>
     </div>
   </div>
   </div>

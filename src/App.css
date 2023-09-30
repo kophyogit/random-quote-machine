@@ -6,7 +6,7 @@
     height: 100vh;
 }
 #quote-box{
-    width: 500px;
+    width: 600px;
     margin: 0 auto;
     min-height: 300px;
     display: flex;
@@ -15,7 +15,7 @@
     padding: 2rem;
     text-align: left;
     background-color: white;
-    border-radius: 8px white;
+    border-radius: 25px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.628);
 }
 
@@ -42,4 +42,18 @@ button,a{
     cursor: pointer;
     font-family: inherit;
     color: white;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-down {
+    animation: fadeInDown 2s linear both;
 }
